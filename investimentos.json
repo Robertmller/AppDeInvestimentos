@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "nome": "Pc Gamer",
+        "valor": 3000
+    },
+    {
+        "id": 2,
+        "nome": "Iphone",
+        "valor": 10000
+    },
+    {
+        "id": 3,
+        "nome": "Casa",
+        "valor": 100000
+    },
+    {
+        "id": 4,
+        "nome": "Carro",
+        "valor": 50000
+    },
+    {
+        "id": 5,
+        "nome": "Xbox",
+        "valor": 2000
+    }
+]

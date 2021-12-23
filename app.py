@@ -62,7 +62,34 @@ def listarInvestimentos(exibirTodos=False):
     print(tabulate(listarInvestimentos, headers=['id', 'nome', 'valor']))
 
 
+def mostrarMenu():
+    print("1 - Criar Investimento")
+    print("2 - Listar Investimentos")
+    print("3 - Editar Investimento")
+    print("4 - Excluir Investimento")
+    print("5 - Sair")
+    print()
+    opcao = int(input("Digite uma opção: "))
+    return opcao
+
+
 if __name__ == '__main__':
     apresentar_programa()
     exibirInvestimentoTotal()
     listarInvestimentos()
+
+    while True:
+        opcao = mostrarMenu()
+        if opcao == 1:
+            pass
+        elif opcao == 2:
+            pass
+        elif opcao == 3:
+            pass
+        elif opcao == 4:
+            pass
+        elif opcao == 5:
+            break
+        else:
+            print("Opção não disponível!")
+            break

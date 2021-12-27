@@ -19,7 +19,13 @@ if __name__ == '__main__':
             editar_investimento_existente(investimento_id)
         elif opcao == 4:
             investimento_id = input("Qual investimento quer excluir: ")
-            excluirInvestimento(investimento_id)
+            opcao = input("Tem certeza que quer excluir: S/N: ").upper()
+            if opcao == 'S':
+                excluirInvestimento(investimento_id)
+                listarInvestimentos()
+            else:
+                listarInvestimentos()
+                opcao = mostrarMenu()
         elif opcao == 5:
             break
         else:

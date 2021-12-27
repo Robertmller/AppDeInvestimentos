@@ -3,7 +3,17 @@ from pathlib import Path
 
 
 def apresentar_programa():
-    print("INVESTING")
+    print("╔═════════════════════════════════════════════════════════════════════════════════════════════════════════╗")
+    print("  **  ****     **  **         **      **   ******** **********     **               ****     **** ******** ")
+    print(" /** /**/**   /**  /**      /**     /**   **////// /////**///     ****             /**/**   **/** /**/////  ")
+    print(" /** /**//**  /**  /**     /**     /**   /**           /**       **//**           /**//** ** /** /**       ")
+    print(" /** /** //** /**   //**    **    /**   /*********    /**      **  //**   *****  /** //***  /** /*******  ")
+    print(" /** /**  //**/**   //**  **     /**   ////////**    /**      **********  ///// /**  //*   /** /**////   ")
+    print(" /** /**   //****    //****     /**        /**      /**      /**//////**       /**   /    /** /**       ")
+    print(" /** /**    //***     //**     /**   ********      /**      /**      /**      /**        /** /********  ")
+    print(" //  //      ///      //     //    ////////       //       //        //      //         //  ////////    ")
+    print("╚══════════════════════════════════════════════════════════════════════════════════════════════════════╝")
+    print()
 
 
 def criar_investimentos_iniciais():
@@ -52,7 +62,10 @@ def exibirInvestimentoTotal():
     for investimento in investimentos:
         total = investimento['valor'] + total
 
+    print("┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓")
     print(f"Total investidos até o momento: R${total:.2f}")
+    print("┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛")
+    print()
 
 
 def listarInvestimentos(exibirTodos=False):
@@ -63,14 +76,16 @@ def listarInvestimentos(exibirTodos=False):
         listarInvestimentos.append(
             [investimento['id'], investimento['nome'], investimento['valor']])
     print(tabulate(listarInvestimentos, headers=['id', 'nome', 'valor']))
+    print()
+    print()
 
 
 def mostrarMenu():
-    print("1 - Criar Investimento")
-    print("2 - Listar Investimentos")
-    print("3 - Editar Investimento")
-    print("4 - Excluir Investimento")
-    print("5 - Sair")
+    print("───── ❝ 1 - Criar Investimento ❞ ─────")
+    print("───── ❝ 2 - Listar Investimentos ❞ ─────")
+    print("───── ❝ 3 - Editar Investimento ❞ ─────")
+    print("───── ❝ 4 - Excluir Investimento ❞ ─────")
+    print("───── ❝ 5 - Sair ❞ ─────  ")
     print()
     opcao = int(input("Digite uma opção: "))
     return opcao
